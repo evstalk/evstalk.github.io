@@ -23,14 +23,22 @@ window.addEventListener('DOMContentLoaded', function () {
     var mouseover3 = false;
     var tinyRect4 = this.document.querySelector(".tinyAhhThing4");
     var mouseover4 = false;
+    var views = 0;
+    const viewHolder = this.document.querySelector(".viewHolder");
 
 
 
 
+      fetch('https://countapi.mileshilliard.com/api/v1/hit/fofosgrandadventure')
+    .then(res => res.json())
+    .then(data => {
+    views = data.value;
+    console.log("New value:", views);
+    })
+    .catch(err => console.error("Error:", err));
 
 
-
-
+    
 
 
     
@@ -116,6 +124,8 @@ window.addEventListener('DOMContentLoaded', function () {
             link4.style.left = (width - 100) + "px";
             tinyRect4.style.left = (width - 100) + "px";
             backgroundobby.style.width = document.documentElement.clientWidth + "px";
+            //viewHolder.style.left = document.documentElement.clientWidth / 2 - 100 + "px";
+            viewHolder.innerHTML = "This website has " + views.toString() + " views!!!"
 
             if (spin < 360)
             {
