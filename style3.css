@@ -1,0 +1,15 @@
+.genericstyletostopcrashing
+{
+    rotate: -180deg;
+}
+@font-face {
+    font-family: 'ComicSans';
+    src: url('fonts/ComicSansMS.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.text
+{
+    font-family: ComicSans;
+    color: #FFFFFF;
+}
