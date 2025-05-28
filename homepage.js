@@ -104,7 +104,7 @@ window.addEventListener('DOMContentLoaded', function () {
             {
                 tinyRect2.style.width = (Number(tinyRect2.style.width.toString().replace("px", "")) + 1) + "px";
             }
-            if(mouseover3 && Number(tinyRect3.style.width.toString().replace("px", "")) < 62)
+            if(mouseover3 && Number(tinyRect3.style.width.toString().replace("px", "")) < 80)
             {
                 tinyRect3.style.width = (Number(tinyRect3.style.width.toString().replace("px", "")) + 1) + "px";
             }
@@ -115,12 +115,12 @@ window.addEventListener('DOMContentLoaded', function () {
             width = document.documentElement.clientWidth;
             headerTop.style.width = document.documentElement.clientWidth + "px";
             header2.style.width = document.documentElement.clientWidth + "px";
-            link.style.left = (width - 400) + "px";
-            tinyRect1.style.left = (width - 400) + "px";
-            link2.style.left = (width - 270) + "px";
-            tinyRect2.style.left = (width - 270) + "px";
-            link3.style.left = (width - 200) + "px";
-            tinyRect3.style.left = (width - 200) + "px";
+            link.style.left = (width - 425) + "px";
+            tinyRect1.style.left = (width - 425) + "px";
+            link2.style.left = (width - 295) + "px";
+            tinyRect2.style.left = (width - 295) + "px";
+            link3.style.left = (width - 225) + "px";
+            tinyRect3.style.left = (width - 225) + "px";
             link4.style.left = (width - 100) + "px";
             tinyRect4.style.left = (width - 100) + "px";
             backgroundobby.style.width = document.documentElement.clientWidth + "px";
