@@ -25,8 +25,7 @@ window.addEventListener('DOMContentLoaded', function () {
     var mouseover4 = false;
     var views = 0;
     const viewHolder = this.document.querySelector(".viewHolder");
-
-
+    var paragrap = document.querySelector(".textthing");
 
 
       fetch('https://countapi.mileshilliard.com/api/v1/hit/fofosgrandadventure')
@@ -37,7 +36,13 @@ window.addEventListener('DOMContentLoaded', function () {
     })
     .catch(err => console.error("Error:", err));
 
-
+    /*
+     fetch('https://countapi.mileshilliard.com/api/v1/set/fofosgrandadventure?value=30')
+    .then(res => res.json())
+    .then(data => console.log("Value set to:", data.value))
+    .catch(err => console.error("Error:", err));
+    */
+    
     
 
 
@@ -108,13 +113,14 @@ window.addEventListener('DOMContentLoaded', function () {
             {
                 tinyRect3.style.width = (Number(tinyRect3.style.width.toString().replace("px", "")) + 1) + "px";
             }
-            if(mouseover4 && Number(tinyRect4.style.width.toString().replace("px", "")) < 62)
+            if(mouseover4 && Number(tinyRect4.style.width.toString().replace("px", "")) < 68.5)
             {
                 tinyRect4.style.width = (Number(tinyRect4.style.width.toString().replace("px", "")) + 1) + "px";
             }
             width = document.documentElement.clientWidth;
             headerTop.style.width = document.documentElement.clientWidth + "px";
             header2.style.width = document.documentElement.clientWidth + "px";
+            paragrap.style.left = document.documentElement.clientWidth / 6 + "px";
             link.style.left = (width - 425) + "px";
             tinyRect1.style.left = (width - 425) + "px";
             link2.style.left = (width - 295) + "px";
